@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Student ID System Form</title>
+	<link rel="stylesheet" href="styles.css" >
+
+</head>
+<body>
+
+<img src = "logo.png" alt="">
+
+	<h1>STUDENT ID REGISTRATION PAGE</h1>
+
+<form action="/action_page.php">
+	<h2>Personal Information</h2>
+  <label for="fname">First name:</label><br>
+  	<input type="text" id="fname" name="fname" placeholder="Enter your first name"><br>
+  <label for="fname">Middle Initial:</label><br>
+  	<input type="text" id="mname" name="mname"placeholder="Enter your Middle Initial"><br>
+  <label for="lname">Last name:</label><br>
+  	<input type="text" id="lname" name="lname" placeholder="Enter your Last name"><br>
+  <label for="idnum">Enter ID Number:</label><br>
+  	<input type="text" id="idnum" name="idnum" maxlength="9" size="9"placeholder="9 digits"><br>
+  <label for="bday">Enter your Birth date:</label><br>
+  	<input type="text" id="bday" name="bday" placeholder="Month/Day/Year"><br>
+  <label for="courses">Select your Course</label><br>
+  	<input list="courses">
+  	<datalist id="courses">
+  		<option value = "BS in Information Technology">
+  		<option value = "BS in Computer Science">
+  	</datalist><br>
+  <label for="address">Enter your Address:</label><br>
+  	<textarea name ="address" id="address" rows="7" cols="25"></textarea><br>
+
+
+	<h2>In case of Emergency please contact</h2>
+
+<label for="pname">Parent/Guardian:</label><br>
+  	<input type="text" id="pname" name="pname" placeholder="Parent's/Guardian's name" ><br>
+  <label for="cpnum">Enter Contact Number:</label><br>
+  	<input type="text" id="cpnum" name="cpnum" maxlength="11" size="11"placeholder="Cellphone Number"><br>
+
+  	 <br>
+  <input type="submit" value=submit>
+  <input type="reset">
+</form>
+
+</body>
+</html>
